@@ -6,14 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/tailwindoutput.css">
     <title>Nahom Habtamu - Portfolio</title>
+    <script src="https://kit.fontawesome.com/72f71d06d5.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
-    <button class="btn p-3 bg-blue-500 hover:bg-blue-600 dark:bg-green-500 dark:hover:bg-green-600 rounded-md"><a class="text-white" href="./assets/files/resume.pdf">Download Resume</a></button>
-    <button id="toggle-dark-mode-btn" class="btn p-3 bg-violet-800 hover:bg-violet-900 rounded-md text-white font-bold">Toggle Dark Mode</button>
+<body class="bg-gray-100">
+    <nav class="block py-4 px-1 md:p-6 bg-white shadow-sm md:flex md:items-center md:justify-between">
+        <div class="flex items-center justify-between ml-2">
+            <!-- Nav Brand -->
+            <a href="index.html">
+                <span class="text-2xl cursor-pointer">nahom habtamu - portfolio</span>
+            </a>
+            <!-- Responsive Buttons -->
+            <div class="flex">
+                <!-- Light/Dark Mode -->
+                <div
+                    class="md:hidden flex items-center justify-center cursor-pointer mr-3 p-2 rounded-lg hover:bg-gray-100">
+                    <i class="fa-regular fa-sun text-2xl"></i>
+                    <i class="ml-1 fa-solid fa-moon text-2xl"></i>
+                </div>
+                <!-- Responsive Menu Button -->
+                <div
+                    id="responsive-nav-menu-btn"
+                    class="md:hidden flex items-center justify-center cursor-pointer mr-3 p-3 rounded-lg hover:bg-gray-100">
+                    <i class="text-2xl fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Items -->
+        <ul id="nav-items-container" class="hidden mt-6 md:mt-0 md:flex md:items-center">
+            <li
+                class="cursor-pointer mx-1 md:mx-5 py-2 hover:bg-gray-100 md:hover:bg-transparent hover:text-black md:hover:text-gray-500 my-1 md:my-0 text-center">
+                <i class="fa-solid fa-house-chimney mr-2"></i>
+                <a href="#" class="text-xl">HOME</a>
+            </li>
+            <li
+                class="cursor-pointer mx-1 md:mx-5 py-2 hover:bg-gray-100 md:hover:bg-transparent hover:text-black md:hover:text-gray-500 my-1 md:my-0 text-center">
+                <i class="fa-solid fa-user mr-2"></i>
+                <a href="#" class="text-xl">ABOUT ME</a>
+            </li>
+            <li
+                class="cursor-pointer mx-1 md:mx-5 py-2 hover:bg-gray-100 md:hover:bg-transparent hover:text-black md:hover:text-gray-500 my-1 md:my-0 text-center">
+                <i class="fa-solid fa-code mr-2"></i>
+                <a href="#" class="text-xl">PROJECTS</a>
+            </li>
+            <li
+                class="cursor-pointer mx-1 md:mx-5 py-2 hover:bg-gray-100 md:hover:bg-transparent hover:text-black md:hover:text-gray-500 my-1 md:my-0 text-center">
+                <i class="fa-solid fa-envelopes-bulk mr-2"></i>
+                <a href="#" class="text-xl">CONTACT</a>
+            </li>
+            <li
+                class="hidden md:block cursor-pointer mx-1 md:mx-5 py-2 md:hover:bg-transparent hover:text-black my-1 md:my-0 text-center">
+                <div class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100">
+                    <i class="fa-regular fa-sun text-2xl"></i>
+                    <i class="ml-1 fa-solid fa-moon text-2xl"></i>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="">
+
+        <h1 class="text-3xl font-bold underline">
+            Hello world!
+        </h1>
+        <button class="btn p-3 bg-blue-500 hover:bg-blue-600 dark:bg-green-500 dark:hover:bg-green-600 rounded-md"><a
+                class="text-white" href="./assets/files/resume.pdf">Download Resume</a></button>
+        <button id="toggle-dark-mode-btn"
+            class="btn p-3 bg-violet-800 hover:bg-violet-900 rounded-md text-white font-bold">Toggle Dark Mode</button>
+    </div>
 
     <script src="./js/script.js"></script>
 </body>
